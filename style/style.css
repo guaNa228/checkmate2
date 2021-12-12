@@ -1,0 +1,347 @@
+@font-face {
+    font-family: Montserrat-Medium; /* Имя шрифта */
+    src: url(../fonts/Montserrat-Medium.ttf); /* Путь к файлу со шрифтом */
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat-Bold; /* Имя шрифта */
+    src: url(../fonts/Montserrat-Bold.ttf); /* Путь к файлу со шрифтом */
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Manrope-Number; /* Имя шрифта */
+    src: url(../fonts/Manrope-ExtraBold.ttf); /* Путь к файлу со шрифтом */
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Oswald-Bold; /* Имя шрифта */
+    src: url(../fonts/Oswald-Bold.ttf); /* Путь к файлу со шрифтом */
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Rubik-Bold; /* Имя шрифта */
+    src: url(../fonts/Rubik-Bold.ttf); /* Путь к файлу со шрифтом */
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    padding-top: 150px;
+    margin: 0 auto;
+    background: #000;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 820px) { 
+    article {
+        padding-top: 70px;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 74.4375vw;
+}
+
+.top-panel {
+    max-width: 1050px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 90px;
+}
+
+h2.top-panel__header {
+    display: block;
+    font-family: Oswald-Bold;
+    font-size: 5rem;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+@media (max-width: 820px) { 
+    h2.top-panel__header {
+        font-size: 3rem;
+    }
+}
+
+p.top-panel__description {
+    font-family: Montserrat-Medium;
+    padding: 0px 25px;
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+/* Header */
+
+header.header {
+    margin: 0;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    background-color: #0E121C;
+    background-image: url(../files/header/bg.svg);
+    background-position: 150px 0px;
+    background-repeat: no-repeat no-repeat;
+}
+
+.header__top-panel {
+    padding-top: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    flex-basis: 445px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav a{
+    color: white;
+    font-family: Montserrat-Bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__content {
+    margin-top: 130px;
+}
+
+.header__content h1.header__content__text {
+    max-width: 930px;
+    font-family: Oswald-Bold;
+    color: white;
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.header__content button.header__content_button {
+    position: static;
+    margin-top: 100px;
+    width: 330px;
+    background: white;
+    line-height: 65px;
+    text-align: center;
+    font-family: Rubik-Bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Info */
+
+.achievements-row {
+    margin: 0 auto;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.achievements-row:last-child {
+    justify-content: center;
+}
+
+.achievements__item {
+    flex-basis: 24.467vw;
+    height: 24.466vw;
+    background: red;
+    padding: 45px 35px;
+    color: white;
+    background: linear-gradient(135deg, #50C9C3 0%, #96DEDA 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.achievements__item:first-child {
+    background: linear-gradient(135deg, #EB3349 0%, #F45C43 100%);
+}
+
+.achievements-row:last-child .achievements__item:last-child {
+    color: black;
+    background: #FFFFFF;
+}
+
+p.achievements__item__number {
+    font-family: Manrope-Number;
+    font-size: 8rem;
+}
+
+p.achievements__item__text {
+    font-family: Montserrat-Medium;
+    font-size: 2rem;
+}
+
+/* Partners */
+article.partners {
+    padding-bottom: 0px;
+}
+
+.partners-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 1190px) { 
+    .wrapper {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 820px) { 
+    a.parters-grid__item {
+        width: 15%;
+    }
+    a.parters-grid__item p {
+        font-size: 12px;
+    }
+    .partners-grid {
+        margin-top: -50px;
+    }
+}
+
+a.parters-grid__item {
+    margin: 40px 20px;
+    width: 20%;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+a.parters-grid__item p {
+    margin-top: 30px;
+    color: #5A6384;
+    font-family: Montserrat-Bold;
+    text-align: center;
+}
+
+.partner-grid__item_become {
+    padding-top: 10px;
+}
+
+.partner-grid__item_become div {
+    width: 65px;
+    height: 65px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.partner-grid__item_become div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parters-grid__item_deviated {
+    padding-top: 10px;
+}
+
+/* Future */
+
+article.future {
+    padding-bottom: 150px;
+}
+
+.plans {
+    margin-left: -100px;
+}
+
+.plans__year {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.plans__year__text {
+    flex-basis: 50%;
+
+}
+
+.plans__year__text h3 {
+    font-size: 200px;
+    font-family: Manrope-Number;
+    color: white;
+}
+
+.plans__year__text ul {
+    list-style-type: none;
+}
+
+.plans__year__text li {
+    font-family: Montserrat-Medium;
+    font-size: 28px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.plans__year__img {
+    width: 50%;
+    z-index: 5;
+}
+
+.plans__year__img_yellow {
+    margin-bottom: -200px;
+}
+
+.plans__year__text_red ul li {
+    color: #F06060;
+}
+
+.plans__year__text_yellow ul li {
+    color: #F3B562;
+}
+
+.plans__year__text_green ul li {
+    color: #8CBEB2;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding-bottom: 190px;
+}
+
+.footer-info {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a.footer-info__email {
+    display: block;
+    color: #FFE040;
+    margin-top: -50px;
+    font-size: 2rem;
+    font-family: Montserrat-Medium;
+    margin-bottom: 140px;
+}
+
+nav.footer-info__social {
+    margin: 0 auto;
+    max-width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav.footer-info__social a {
+    cursor: pointer;
+}
