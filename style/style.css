@@ -93,6 +93,18 @@ header.header {
     background-repeat: no-repeat no-repeat;
 }
 
+@media (max-width: 1370px) {
+    header.header {
+        background-position: 10% 0px;
+    }
+}
+
+@media (max-width: 950px) {
+    header.header {
+        background-position: 20% 0px;
+    }
+}
+
 .header__top-panel {
     padding-top: 65px;
     width: 100%;
@@ -126,6 +138,20 @@ header.header {
     text-transform: uppercase;
 }
 
+@media (max-width: 1370px) {
+    
+    .header__content h1.header__content__text {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header__content h1.header__content__text {
+        font-size: 2.5em;
+    }
+}
+
+
 .header__content button.header__content_button {
     position: static;
     margin-top: 100px;
@@ -156,13 +182,26 @@ header.header {
 }
 
 .achievements__item {
-    flex-basis: 24.467vw;
+    width: 24.467vw;
     height: 24.466vw;
-    background: red;
     padding: 45px 35px;
     color: white;
     background: linear-gradient(135deg, #50C9C3 0%, #96DEDA 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 950px) {
+    .achievements__item {
+        padding: 5px 3px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .achievements__item {
+        padding: 5px 3px;
+        width: 30.9vw;
+        height: 30.9vw;
+    }
 }
 
 .achievements__item:first-child {
@@ -176,12 +215,30 @@ header.header {
 
 p.achievements__item__number {
     font-family: Manrope-Number;
-    font-size: 8rem;
+    font-size: 6rem;
+}
+
+@media screen and (max-width: 1100px) {
+    p.achievements__item__number {
+        font-size: 2.5rem;
+    }
 }
 
 p.achievements__item__text {
     font-family: Montserrat-Medium;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+    p.achievements__item__text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    p.achievements__item__text {
+        font-size: .9rem;
+    }
 }
 
 /* Partners */
@@ -264,6 +321,12 @@ article.future {
     margin-left: -100px;
 }
 
+@media (max-width: 1210px) { 
+    .plans {
+        margin-left: 0;
+    }
+}
+
 .plans__year {
     width: 100%;
     display: flex;
@@ -271,14 +334,25 @@ article.future {
 }
 
 .plans__year__text {
-    flex-basis: 50%;
+    max-width: 50%;
+}
 
+@media (max-width: 830px) { 
+    .plans__year__text {
+        max-width: 100%;
+    }
 }
 
 .plans__year__text h3 {
     font-size: 200px;
     font-family: Manrope-Number;
     color: white;
+}
+
+@media (max-width: 1000px) { 
+    .plans__year__text h3 {
+        font-size: 100px;
+    }
 }
 
 .plans__year__text ul {
@@ -289,7 +363,12 @@ article.future {
     font-family: Montserrat-Medium;
     font-size: 28px;
     margin-bottom: 30px;
-    white-space: nowrap;
+}
+
+@media (max-width: 600px) { 
+    .plans__year__text li {
+        font-size: 20px;
+    }
 }
 
 .plans__year__img {
@@ -297,9 +376,22 @@ article.future {
     z-index: 5;
 }
 
+@media (max-width: 830px) { 
+    .plans__year__img {
+        display: none;
+    }
+}
+
 .plans__year__img_yellow {
     margin-bottom: -200px;
 }
+
+@media (max-width: 1000px) { 
+    .plans__year__img_yellow {
+        margin-bottom: 0;
+    }
+}
+
 
 .plans__year__text_red ul li {
     color: #F06060;
@@ -332,6 +424,18 @@ a.footer-info__email {
     font-size: 2rem;
     font-family: Montserrat-Medium;
     margin-bottom: 140px;
+}
+
+@media (max-width: 630px) { 
+    a.footer-info__email {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 430px) { 
+    a.footer-info__email {
+        font-size: 18px;
+    }
 }
 
 nav.footer-info__social {
