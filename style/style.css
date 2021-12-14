@@ -33,6 +33,11 @@
     padding: 0;
 }
 
+body::after{
+    position:absolute; width: 0; height: 0; overflow:hidden; z-index:-1;
+    content:url(../files/header/bg.svg);
+ }
+
 article {
     padding-top: 150px;
     margin: 0 auto;
@@ -124,6 +129,11 @@ header.header {
     font-family: Montserrat-Bold;
     text-decoration: none;
     cursor: pointer;
+    transition: .5s;
+}
+
+.header__nav a:hover {
+    color: #FFE040;
 }
 
 .header__content {
@@ -182,8 +192,8 @@ header.header {
 }
 
 .achievements__item {
-    width: 24.467vw;
-    height: 24.466vw;
+    width: 24.8vw;
+    height: 24.8vw;
     padding: 45px 35px;
     color: white;
     background: linear-gradient(135deg, #50C9C3 0%, #96DEDA 100%);
@@ -279,6 +289,11 @@ a.parters-grid__item {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
+}
+
+a.parters-grid__item:hover p{
+    color: #FFE040;
 }
 
 a.parters-grid__item p {
@@ -286,6 +301,7 @@ a.parters-grid__item p {
     color: #5A6384;
     font-family: Montserrat-Bold;
     text-align: center;
+    transition: .5s;
 }
 
 .partner-grid__item_become {
@@ -449,3 +465,16 @@ nav.footer-info__social {
 nav.footer-info__social a {
     cursor: pointer;
 }
+
+
+nav.footer-info__social a svg {
+    width: 40px;
+    height: 40px;
+    transition: .5s;
+    fill: white;
+}
+
+nav.footer-info__social a:hover svg {
+    filter: invert(42%) sepia(1503%) saturate(800%) hue-rotate(24deg) brightness(119%) contrast(119%);
+}
+
