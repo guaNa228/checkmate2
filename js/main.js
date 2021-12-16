@@ -15,13 +15,30 @@ function menuOpen() {
     mobileMenu.classList.add("mobile-menu_active");
     mobileMenu.classList.remove("mobile-menu_closed");
     mobileMenu.classList.remove("mobile-menu_virgin");
+    disableScroll();
 }
 
 function menuClose() {
     mobileMenu.classList.remove("mobile-menu_active");
     mobileMenu.classList.add("mobile-menu_closed");
+    enableScroll();
 }
 
 mobileMenuLinks.forEach((item) => {
     item.onclick = () => {menuClose();}
 });
+
+function disableScroll() {
+    scrollTop = 
+      window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = 
+      window.pageXOffset || document.documentElement.scrollLeft,
+
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
