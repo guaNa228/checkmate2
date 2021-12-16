@@ -10,14 +10,15 @@
     <link rel="preload" as="image" href="files/header/bg.svg">
 </head>
 <body>
-    <div class="mobile-menu">
+    <div class="mobile-menu mobile-menu_virgin">
+        <svg class="mobile-menu__close-button" draggable="false"><use draggable="false" xlink:href="symbol-defs.svg#icon-times-solid"></use></svg>
         <nav class="mobile-menu__nav">
-            <a href="">About</a>
-            <a href="">Partners</a>
-            <a href="">Our future</a>
-            <a href="">Contact</a>
+            <a href="#info">About</a>
+            <a href="#partners">Partners</a>
+            <a href="#future">Our future</a>
+            <a href="#contacts">Contact</a>
         </nav>
-        <nav class="footer-info__social">
+        <nav class="social">
             <a  draggable="false" target="_blank" href="https://t.me/cryptochessgame"><svg draggable="false"><use draggable="false" xlink:href="symbol-defs.svg#icon-telegram"></use></svg></a>
             <a  draggable="false" target="_blank" href="https://www.instagram.com/checkmate_crypto_chess/"><svg><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg></a>
             <a  draggable="false" target="_blank" href="https://youtube.com/channel/UC7W7soX1oZ7frd_X0sGuLTA"><svg><use xlink:href="symbol-defs.svg#icon-youtube"></use></svg></a>
@@ -29,22 +30,24 @@
            <div class="header__top-panel">
                <img src="files/header/logo.svg" alt="" class="header__logo">
                <nav class="header__nav">
-                   <a href="">About</a>
-                   <a href="">Partners</a>
-                   <a href="">Our future</a>
-                   <a href="">Contact</a>
+                   <a href="#info">About</a>
+                   <a href="#partners">Partners</a>
+                   <a href="#future">Our future</a>
+                   <a href="#contacts">Contact</a>
                </nav>
                <svg class="header__top-panel__menu-button" draggable="false"><use draggable="false" xlink:href="symbol-defs.svg#icon-bars-solid"></use></svg>
            </div>
            <div class="header__content">
                <h1 class="header__content__text">Online chess tournaments with cryptocurrency prizes</h1>
-               <button class="header__content_button">
-                   telegram
-               </button>
+               <a target="_blank" href="https://t.me/cryptochessgame">
+                <button class="header__content_button">
+                    telegram
+                </button>
+               </a>
            </div>
         </div>
     </header>
-    <article class="info">
+    <article id="info">
         <div class="wrapper">
             <div class="top-panel">
                 <h2 class="top-panel__header">
@@ -72,7 +75,7 @@
             </div>
         </div>
     </article>
-    <article class="partners">
+    <article id="partners">
         <div class="wrapper">
             <div class="top-panel">
                 <h2 class="top-panel__header">
@@ -136,7 +139,7 @@
             </div>
         </div>
     </article>
-    <article class="future">
+    <article id="future">
         <div class="wrapper">
             <div class="top-panel">
                 <h2 class="top-panel__header">
@@ -182,7 +185,7 @@
             </div>
         </div>
     </article>
-    <footer>
+    <footer id="contacts">
         <div class="wrapper">
             <div class="top-panel">
                 <h2 class="top-panel__header">
@@ -191,7 +194,7 @@
             </div>
             <div class="footer-info">
                 <a class="footer-info__email" href="mailto:checkmate.crypto.chess@gmail.com">checkmate.crypto.chess@gmail.com</a>
-                <nav class="footer-info__social">
+                <nav class="social">
                     <a  draggable="false" target="_blank" href="https://t.me/cryptochessgame"><svg draggable="false"><use draggable="false" xlink:href="symbol-defs.svg#icon-telegram"></use></svg></a>
                     <a  draggable="false" target="_blank" href="https://www.instagram.com/checkmate_crypto_chess/"><svg><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg></a>
                     <a  draggable="false" target="_blank" href="https://youtube.com/channel/UC7W7soX1oZ7frd_X0sGuLTA"><svg><use xlink:href="symbol-defs.svg#icon-youtube"></use></svg></a>
