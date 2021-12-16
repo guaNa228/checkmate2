@@ -413,11 +413,16 @@ header.header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 950px) {
     .achievements__item {
-        padding: 5px 3px;
         width: 30.9vw;
         height: 30.9vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .achievements__item {
+        padding: 5px;
     }
 }
 
@@ -432,11 +437,17 @@ header.header {
 
 p.achievements__item__number {
     font-family: Manrope-Number;
-    font-size: 5rem;
+    font-size: 5.5rem;
     user-select: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
+    p.achievements__item__number {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
     p.achievements__item__number {
         font-size: 2rem;
     }
@@ -444,13 +455,13 @@ p.achievements__item__number {
 
 p.achievements__item__text {
     font-family: Montserrat-Medium;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     user-select: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
     p.achievements__item__text {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -654,9 +665,10 @@ a.footer-info__email {
     margin-top: -50px;
     font-size: 2rem;
     font-family: Montserrat-Medium;
-    margin-bottom: 140px;
+    margin-bottom: 110px;
     cursor: pointer;
     transition: .5s;
+    line-height: 4rem;
 }
 
 a.footer-info__email:hover {
@@ -666,12 +678,14 @@ a.footer-info__email:hover {
 @media (max-width: 630px) { 
     a.footer-info__email {
         font-size: 22px;
+        line-height: 3rem;
     }
 }
 
 @media (max-width: 430px) { 
     a.footer-info__email {
         font-size: 18px;
+        line-height: 2rem;
     }
 }
 
