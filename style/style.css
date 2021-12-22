@@ -170,6 +170,7 @@ p.top-panel__description {
     flex-direction: column;
     justify-content: center;
     animation: menu 1s;
+    z-index: 2;
 }
 
 .mobile-menu.mobile-menu_closed {
@@ -179,6 +180,7 @@ p.top-panel__description {
     animation: menuClose 1s;
     width: 0;
     height: 0;
+    z-index: 2;
 }
 
 .mobile-menu.mobile-menu_closed nav a {
@@ -355,7 +357,8 @@ header.header {
 }
 
 
-.header__content button.header__content_button {
+.header__content a.header__content_button {
+    display: flex;
     position: static;
     margin-top: 100px;
     width: 330px;
@@ -369,24 +372,20 @@ header.header {
     cursor: pointer;
     user-select: none;
     transition: .5s;
+    align-items: center;
+    justify-content: center;
 }
 
-.header__content button.header__content_button:hover {
+.header__content a.header__content_button svg {
+    width: 35px;
+    height: 65px;
+    filter: invert(100%);
+    margin-right: 20px;
+    z-index: 0;
+}
+
+.header__content a.header__content_button:hover {
     background: #FFE040;
-}
-
-.header__content button.header__content_button {
-    position: static;
-    margin-top: 100px;
-    width: 330px;
-    background: white;
-    line-height: 65px;
-    text-align: center;
-    font-family: Rubik-Bold;
-    text-transform: uppercase;
-    font-size: 20px;
-    outline: none;
-    cursor: pointer;
 }
 
 /* Info */

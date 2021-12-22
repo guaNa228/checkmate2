@@ -4,21 +4,18 @@ import {langData} from './reverse-language.js';
 /* language */
 const translateable = ["ru", "uk", "be", "kk"];
 
-const userLang = navigator.language || navigator.userLanguage;
-if (translateable.includes(userLang)) translate();
+const userLang = navigator.languages;
+if (userLang.filter((item) => translateable.includes(item)).length > 0) translate();
 
 function translate() {
     let elements = document.getElementsByTagName("*");
-    let tmp;
     let neededCounter = 0;
     for (let i = 0; i<elements.length; i++) {
         if (elements[i].tagName!="TITLE" && elements[i].innerText && elements[i].innerText.indexOf("\n")==-1 && 
         !elements[i].classList.contains("parters-grid__item") && !elements[i].parentElement.classList.contains("parters-grid__item") &&
-        elements[i].tagName!="DIV" && elements[i].tagName!="H3" && !elements[i].classList.contains("footer-info__email")
+        elements[i].tagName!="DIV" && elements[i].tagName!="H3" && !elements[i].classList.contains("footer-info__email") 
          || (elements[i].parentElement && elements[i].tagName=="P" && elements[i].parentElement.classList.contains("partner-grid__item_become"))) {
-            tmp = langData[neededCounter];
-            langData[neededCounter] = elements[i].innerHTML;
-            elements[i].innerHTML = tmp;
+            elements[i].innerHTML = langData[neededCounter];
             neededCounter++;
         }
     }
@@ -56,14 +53,12 @@ mobileMenuLinks.forEach((item) => {
 });
 
 function disableScroll() {
-    scrollTop = 
-      window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = 
-      window.pageXOffset || document.documentElement.scrollLeft,
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
+    window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+    };
 }
 
 function enableScroll() {
