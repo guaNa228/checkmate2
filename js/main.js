@@ -8,6 +8,7 @@ const userLang = navigator.languages;
 if (userLang.filter((item) => translateable.includes(item)).length > 0) translate();
 
 function translate() {
+    document.querySelector('html').setAttribute("lang", userLang[0]);
     let elements = document.getElementsByTagName("*");
     let neededCounter = 0;
     for (let i = 0; i<elements.length; i++) {
